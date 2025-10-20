@@ -1,0 +1,5 @@
+cookie:
+  httpOnly: true
+  secure: false
+  domain: null
+  maxAge: 86400000
