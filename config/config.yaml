@@ -1,0 +1,43 @@
+# http:
+#   host: 'localhost'
+#   port: 3000
+
+# db:
+#   postgres:
+#     url: 'localhost'
+#     port: 5432
+#     database: 'yaml-db'
+
+#   sqlite:
+#     database: 'sqlite.db'
+
+API_PREFIX: 'api'
+
+session:
+  secret: 'zmlearn'
+  resave: false
+  saveUninitialized: false
+  name: 'zm.session'
+  rolling: true
+
+# 86400000 = 24 * 60 * 60 * 1000  使用数字格式，否则会出现格式类型错误
+cookie:
+  httpOnly: true
+  secure: true
+  domain: '.zmlearn.com'
+  maxAge: 86400000
+
+jwt:
+  secret: 'zm-portal-secret-key'
+  expiresIn: '1h'
+
+captcha:
+  size: 4
+  fontSize: 50
+  width: 100
+  height: 34
+  background: '#c96'
+
+swagger:
+  title: 'nest接口文档'
+  path: '/api-docs'
