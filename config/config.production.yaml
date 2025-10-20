@@ -1,0 +1,8 @@
+# 部署时填写两个独立生成、至少 32 位的随机密钥，不要提交真实密钥。
+sessionStore: 'mongo'
+
+session:
+  secret: null
+
+jwt:
+  secret: null

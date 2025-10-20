@@ -1,0 +1,9 @@
+# 仅用于自动化测试，不用于部署。
+session:
+  secret: 'test-only-session-secret'
+
+jwt:
+  secret: 'test-only-jwt-secret'
+
+cookie:
+  secure: false

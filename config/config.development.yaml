@@ -1,0 +1,11 @@
+session:
+  secret: 'development-only-session-secret-change-in-production'
+
+jwt:
+  secret: 'development-only-jwt-secret-change-in-production'
+
+cookie:
+  httpOnly: true
+  secure: false
+  domain: null
+  maxAge: 86400000
